@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-df_vehicles = pd.read_csv("/Users/andecedeno/sprint4project2-1/vehicles_us.csv")
+df_vehicles = pd.read_csv('vehicles_us.csv')
 def extract_manufacturer(model_name):
     # Splitting by space and assuming the first word is the manufacturer
     return model_name.split()[0].lower()  # Assuming all manufacturer names are lowercase
